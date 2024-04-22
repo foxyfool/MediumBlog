@@ -1,6 +1,3 @@
-import { useBlog } from "../hooks";
-import { BlogView } from "../components/blogview";
-
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
@@ -74,7 +71,11 @@ interface ConfirmModalProps {
   onCancel: () => void;
 }
 
-const ConfirmModal: React.FC<ConfirmModalProps> = ({ message, onConfirm, onCancel }) => {
+const ConfirmModal: React.FC<ConfirmModalProps> = ({
+  message,
+  onConfirm,
+  onCancel,
+}) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
       <div className="bg-white rounded-lg p-8">

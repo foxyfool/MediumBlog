@@ -1,6 +1,6 @@
 import { ChangeEvent, useState ,} from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { signinInput, SignupInput } from "@foxyfool/medium-blogpost";
+import { SignupInput } from "@foxyfool/medium-blogpost";
 import axios from "axios";
 import { BACKEND_URL } from "../config"
 
